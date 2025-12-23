@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>🎆 Happy New Year 2026 🎆</title>
+    
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Start Overlay -->
+    <div id="start-overlay">
+        <div class="start-content">
+            <h1>🎆 New Year 2026 Experience 🎆</h1>
+            <p style="color: rgba(255,255,255,0.6); margin-bottom: 30px;">Click to begin the celebration</p>
+            <button class="start-btn">✨ Enter Experience ✨</button>
+        </div>
+    </div>
+
+    <!-- Aurora Background -->
+    <div class="aurora-layer" id="aurora"></div>
+
+    <!-- Three.js Canvas -->
+    <div id="canvas-container"></div>
+
+    <!-- Confetti Canvas -->
+    <canvas id="confetti-canvas"></canvas>
+
+    <!-- Countdown -->
+    <div id="countdown-container">
+        <div class="countdown-label">Countdown to New Year</div>
+        <div class="countdown-timer">
+            <div class="time-unit">
+                <div class="time-box" id="days-box">
+                    <span class="time-value" id="days">00</span>
+                </div>
+                <span class="time-label">Days</span>
+            </div>
+            <div class="time-unit">
+                <div class="time-box" id="hours-box">
+                    <span class="time-value" id="hours">00</span>
+                </div>
+                <span class="time-label">Hours</span>
+            </div>
+            <div class="time-unit">
+                <div class="time-box" id="minutes-box">
+                    <span class="time-value" id="minutes">00</span>
+                </div>
+                <span class="time-label">Minutes</span>
+            </div>
+            <div class="time-unit">
+                <div class="time-box" id="seconds-box">
+                    <span class="time-value" id="seconds">00</span>
+                </div>
+                <span class="time-label">Seconds</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Year Message -->
+    <div id="new-year-message">
+        <div class="emoji-celebration">🎉</div>
+        <div class="new-year-text">HAPPY NEW YEAR</div>
+        <div class="year-number">2026</div>
+        <div class="emoji-celebration">🎊</div>
+    </div>
+
+    <!-- UI Controls -->
+    <div id="ui-controls">
+        <button class="glass-btn" id="sound-btn" title="Toggle Sound">🔇</button>
+        <button class="glass-btn" id="fireworks-btn" title="Toggle Fireworks">🎆</button>
+        <button class="glass-btn" id="aurora-btn" title="Toggle Aurora">🌌</button>
+        <button class="glass-btn" id="replay-btn" title="Replay Celebration">🎥</button>
+        <div class="glass-panel slider-container" id="intensity-panel" style="display: none;">
+            <span>💥</span>
+            <input type="range" id="intensity-slider" min="1" max="10" value="5">
+        </div>
+    </div>
+
+    <!-- Signature -->
+    <div class="signature">Crafted with ❤️ by Muhammad Ali Mehdi</div>
+
+   <!-- JavaScript Modules -->
+<script src="js/config.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/scene.js"></script>
+<script src="js/fireworks.js"></script>
+<script src="js/confetti.js"></script>
+<script src="js/countdown.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
